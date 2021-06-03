@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/editrTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Test"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:padding="10sp"
+            android:layout_marginTop="25dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/radioLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:padding="10sp">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/UppercaseRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upper Case"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+
+            <RadioButton
+                android:id="@+id/LowercaseRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lower Case"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                android:id="@+id/InitCapRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Init Cap"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+
+            <CheckBox
+                android:id="@+id/editorCheckbx"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Reverse Order"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/actionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="80sp">
+
+        <Button
+            android:id="@+id/editorCancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/EditorSetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:text="Set" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
