@@ -14,18 +14,36 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:padding="10dp"
-        android:hint="Enter your name here."
+        android:hint="Enter your text here."
         >
 
     </EditText>
 
-    <Button
-        android:id="@+id/editbtn"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Edit">
+        android:layout_height="wrap_content">
 
-    </Button>
+        <Button
+            android:id="@+id/editbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Edit"
+            />
+
+        <Button
+            android:id="@+id/ClearbtnMainAct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Clear"
+            android:layout_marginLeft="20sp"/>
+
+
+
+    </LinearLayout>
+
+
+
 
 </LinearLayout>

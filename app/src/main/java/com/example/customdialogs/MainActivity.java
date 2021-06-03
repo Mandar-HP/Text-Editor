@@ -14,7 +14,7 @@ import com.google.android.material.snackbar.Snackbar;
 public class MainActivity extends AppCompatActivity {
 
     private TextView edttxt,editorDispTxt;
-    private Button edtBtn;
+    private Button edtBtn,clearBtn;
 
 
 
@@ -41,8 +41,14 @@ public class MainActivity extends AppCompatActivity {
         // ATTACHING THE REFFERENCES :
         edtBtn = findViewById(R.id.editbtn);
         edttxt = findViewById(R.id.edittextmainact);
+        clearBtn = findViewById(R.id.ClearbtnMainAct);
 
-
+        clearBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edttxt.setText("");
+            }
+        });
 
 
 
@@ -150,11 +156,11 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-
-
     }
 
-
-
-
+    @Override
+    protected void onDestroy() {
+        Toast.makeText(MainActivity.this,"Thank You for using Mandar's Text Editor",Toast.LENGTH_LONG).show();
+        super.onDestroy();
+    }
 }
